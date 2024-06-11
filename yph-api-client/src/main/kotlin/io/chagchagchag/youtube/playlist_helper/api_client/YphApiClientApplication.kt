@@ -1,4 +1,4 @@
-package io.chagchagchag.youtube.playlist_helper
+package io.chagchagchag.youtube.playlist_helper.api_client
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
