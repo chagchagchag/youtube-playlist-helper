@@ -7,7 +7,7 @@ yph-member
 
 yph-api
 - 사용자에게 노출하는 api
-- graphql
+- graphql, Gateway, RateLimiter
 
 yph-dataaccess
 - dataaccess
