@@ -29,7 +29,13 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 	implementation("org.springframework.cloud:spring-cloud-starter-circuitbreaker-reactor-resilience4j")
+
+	// open feign
 	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
+	// feign client (http)
+	implementation("io.github.openfeign:feign-okhttp:13.1")
+	implementation("io.github.openfeign:feign-httpclient:13.1")
+
 //	implementation("org.springframework.cloud:spring-cloud-starter-gateway")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
