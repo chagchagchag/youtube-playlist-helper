@@ -1,3 +1,5 @@
+**/src/main/resources/**/ignore/
+
 HELP.md
 .gradle
 build/
