@@ -11,6 +11,9 @@ spring:
             logger-level: basic
       okhttp:
         enabled: true
+  config:
+    import:
+      - classpath:ignore/oauth2-client-dev.yml
 
 json-placeholder:
   url: https://jsonplaceholder.typicode.com/

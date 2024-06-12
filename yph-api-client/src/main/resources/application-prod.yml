@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: yph_api_client
+  config:
+    import:
+      - classpath:ignore/oauth2-client-dev.yml
