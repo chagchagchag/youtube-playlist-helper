@@ -1,4 +1,4 @@
-package io.chagchagchag.youtube.playlist_helper.api_client.config
+package io.chagchagchag.youtube.playlist_helper.api_client.openfeign
 
 import feign.Response
 import feign.codec.ErrorDecoder

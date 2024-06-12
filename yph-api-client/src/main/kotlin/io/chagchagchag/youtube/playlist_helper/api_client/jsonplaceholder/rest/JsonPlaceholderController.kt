@@ -5,11 +5,14 @@ import io.chagchagchag.youtube.playlist_helper.api_client.jsonplaceholder.dto.Po
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RestController
+import reactor.core.publisher.Mono
 
 @RestController
 class JsonPlaceholderController (
     val postClient: PostClient
 ){
-  @GetMapping(value = ["posts/{id}"])
-  fun getPostsById(@PathVariable(value = "id") id : Int) : List<Post> = postClient.getPostById(id)
+  @GetMapping(value = ["/posts/{id}"])
+  fun getPostsById(@PathVariable(value = "id") id: Int): Mono<Post> {
+    return postClient.getPostById(id)
+  }
 }
