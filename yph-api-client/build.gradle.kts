@@ -21,6 +21,11 @@ repositories {
 extra["springCloudVersion"] = "2023.0.2"
 
 dependencies {
+	implementation("com.google.api-client:google-api-client:1.23.0")
+	implementation("com.google.oauth-client:google-oauth-client-jetty:1.23.0")
+	compileOnly("com.google.apis:google-api-services-youtubeAnalytics:v2-rev16-1.23.0")
+	implementation("com.google.apis:google-api-services-youtube:v3-rev212-1.25.0")
+
 //	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
 	implementation("org.springframework.boot:spring-boot-starter-graphql")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
