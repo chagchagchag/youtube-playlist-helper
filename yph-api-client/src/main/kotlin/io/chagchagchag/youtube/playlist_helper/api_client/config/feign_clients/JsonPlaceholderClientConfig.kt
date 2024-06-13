@@ -7,7 +7,7 @@ import feign.gson.GsonDecoder
 import feign.reactive.ReactorDecoder
 import feign.reactive.ReactorFeign
 import io.chagchagchag.youtube.playlist_helper.api_client.openfeign.CustomErrorDecoder
-import io.chagchagchag.youtube.playlist_helper.api_client.jsonplaceholder.client.PostClient
+import io.chagchagchag.youtube.playlist_helper.api_client.domain.jsonplaceholder.client.PostClient
 import org.apache.http.entity.ContentType
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean

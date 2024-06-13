@@ -1,7 +1,7 @@
-package io.chagchagchag.youtube.playlist_helper.api_client.jsonplaceholder.rest
+package io.chagchagchag.youtube.playlist_helper.api_client.domain.jsonplaceholder.rest
 
-import io.chagchagchag.youtube.playlist_helper.api_client.jsonplaceholder.client.PostClient
-import io.chagchagchag.youtube.playlist_helper.api_client.jsonplaceholder.dto.Post
+import io.chagchagchag.youtube.playlist_helper.api_client.domain.jsonplaceholder.client.PostClient
+import io.chagchagchag.youtube.playlist_helper.api_client.domain.jsonplaceholder.dto.Post
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RestController

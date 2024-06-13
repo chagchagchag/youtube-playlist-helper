@@ -1,4 +1,4 @@
-package io.chagchagchag.youtube.playlist_helper.api_client.jsonplaceholder.dto
+package io.chagchagchag.youtube.playlist_helper.api_client.domain.jsonplaceholder.dto
 
 data class Post(
     val id: Long,
