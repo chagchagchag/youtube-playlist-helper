@@ -1,0 +1,29 @@
+
+###
+
+### browser 에 입력
+## 1) 아래 주소를 브라우저에 입력 (clientId 는 꼭 본인 clientId로)
+GET https://accounts.google.com/o/oauth2/auth?
+    client_id=clientId
+    &redirect_uri=http://localhost:8080/welcome
+    &response_type=token
+    &scope=profile
+
+Accept: application/json
+
+### browser redirect 된 주소
+## 2) spring security 는 아래 주소로 이동하는 절차를 간소화해서 마치 프로퍼티 몇개만 입력하면 바로 실행 가능한 것처럼 구성되어 있다.
+GET https://accounts.google.com/o/oauth2/auth?client_id={client_id}&redirect_uri={redirect_uri}&response_type=token&scope=profile
+
+
+### login 이 완료되면 아래 주소로 이동된다
+## 3) 내 서버 내의 특정 주소로 이동 (localhost:8080)
+#http://localhost:8080/welcome#access_token={access_token}&token_type=Bearer&expires_in=3599&scope={scope}
+{redirect uri}#access_token={access token}&token_type=Bearer&expires_in={3599}&scope={profile%20https://www.googleapis.com/auth/userinfo.profile}
+
+
+###
+## 4) access token 획득
+## code, client_id, client_secret, redirect_uri, grant_type 파라미터를 POST 요청
+
+
