@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration
 
 @Configuration
 class JsonPlaceholderClientConfig (
-    @Value("\${json-placeholder.url}") val url: String
+    @Value("\${feign-clients.json-placeholder.url}") val url: String
 ){
   @Bean
   fun postClient(): PostClient {
