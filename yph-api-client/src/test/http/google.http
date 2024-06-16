@@ -19,7 +19,9 @@ http://localhost:8080/welcome?code={코드}&scope={profile+https%3A%2F%2Fwww.goo
 # 브라우저에서만 수행할 때에는 아래와 같이 이동된다
 # https://oauth2.googleapis.com#access_token={access token}&token_type=Bearer&expires_in={3599}&scope={profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile}
 
-# 서버 개발시에는 클라이언트(frontend) 페이지에서 access toekn 을 받아서 서버의 특정 url 로 요청을 던진 후 서버에서는 아래 요청을 feign client 로 수행하면 된다.
+# 서버 개발시에는 두가지 방법 중의 하나를 선택하게 되는 듯 하다.
+# 1) 클라이언트(frontend) 페이지에서 access toekn 을 받아서 서버의 특정 url 로 요청을 던진 후 서버에서는 아래 요청을 feign client 로 수행하면 된다.
+# 2) 구글에서 redirect 해준 주소 내에서 code, scope 를 받은 후 서버가 아래요청을 POST 요청 후 access token 을 얻으며, response header 에 access token 을 심어서 client 에 전달해준다.
 ## code, client_id, client_secret, redirect_uri, grant_type 파라미터를 POST 요청
 ## POST https://oauth2.googleapis.com/token
 ##{
