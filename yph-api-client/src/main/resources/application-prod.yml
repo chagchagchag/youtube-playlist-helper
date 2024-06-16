@@ -4,3 +4,4 @@ spring:
   config:
     import:
       - classpath:ignore/oauth2-client-dev.yml
+      - classpath:feign-clients.yml
