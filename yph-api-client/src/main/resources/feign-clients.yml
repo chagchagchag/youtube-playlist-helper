@@ -1,6 +1,9 @@
 feign-clients:
   json-placeholder:
     url: https://jsonplaceholder.typicode.com/
-  google-auth:
-    url: https://accounts.google.com/
+  google:
+    step1:
+      url: https://accounts.google.com/
+    step3:
+      url: https://oauth2.googleapis.com/
 

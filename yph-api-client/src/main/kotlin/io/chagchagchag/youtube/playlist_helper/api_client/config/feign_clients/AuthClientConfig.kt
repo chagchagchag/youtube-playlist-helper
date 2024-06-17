@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration
 
 @Configuration
 class AuthClientConfig (
-    @Value("\${feign-clients.google-auth.url}") val url: String
+    @Value("\${feign-clients.google.step3.url}") val url: String
 ){
   @Bean
   fun authClient(): AuthClient{
