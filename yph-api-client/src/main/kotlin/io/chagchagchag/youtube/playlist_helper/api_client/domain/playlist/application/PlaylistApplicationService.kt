@@ -1,7 +1,7 @@
 package io.chagchagchag.youtube.playlist_helper.api_client.domain.playlist.application
 
 import com.google.api.services.youtube.model.ChannelListResponse
-import io.chagchagchag.youtube.playlist_helper.api_client.youtube.YoutubePlaylistHelper
+import io.chagchagchag.youtube.playlist_helper.api_client.global.youtube.YoutubePlaylistHelper
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service

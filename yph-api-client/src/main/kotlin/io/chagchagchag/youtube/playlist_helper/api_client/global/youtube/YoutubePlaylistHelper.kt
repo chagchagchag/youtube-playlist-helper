@@ -1,4 +1,4 @@
-package io.chagchagchag.youtube.playlist_helper.api_client.youtube
+package io.chagchagchag.youtube.playlist_helper.api_client.global.youtube
 
 import com.google.api.client.auth.oauth2.Credential
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp
