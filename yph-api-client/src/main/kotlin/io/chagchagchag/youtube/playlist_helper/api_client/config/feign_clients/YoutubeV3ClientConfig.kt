@@ -6,6 +6,7 @@ import feign.gson.GsonDecoder
 import feign.gson.GsonEncoder
 import feign.reactive.ReactorDecoder
 import feign.reactive.ReactorFeign
+import io.chagchagchag.youtube.playlist_helper.api_client.domain.playlist.client.PlaylistItemsClient
 import io.chagchagchag.youtube.playlist_helper.api_client.domain.playlist.client.PlaylistsClient
 import io.chagchagchag.youtube.playlist_helper.api_client.global.openfeign.CustomErrorDecoder
 import org.apache.http.entity.ContentType
@@ -30,5 +31,20 @@ class YoutubeV3ClientConfig (
               it.header("Accept", ContentType.APPLICATION_JSON.mimeType)
             }
             .target(PlaylistsClient::class.java, url)
+  }
+
+  @Bean
+  fun youtubeDataV3PlaylistItems(): PlaylistItemsClient {
+    val gson = GsonBuilder().setLenient().create()
+
+    return ReactorFeign.builder()
+            .logLevel(Logger.Level.FULL)
+            .encoder(GsonEncoder(gson))
+            .decoder(ReactorDecoder(GsonDecoder(gson)))
+            .errorDecoder(CustomErrorDecoder())
+            .requestInterceptor {
+              it.header("Accept", ContentType.APPLICATION_JSON.mimeType)
+            }
+            .target(PlaylistItemsClient::class.java, url)
   }
 }

@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.test.context.ActiveProfiles
-import reactor.test.StepVerifier
 import java.time.Duration
 
 @ActiveProfiles(value = ["local"])
@@ -15,8 +14,8 @@ class PlaylistsFeignClientTest {
   lateinit var playlistsClient: PlaylistsClient
 
   @Test
-  fun test_playlists_api_를_정상적으로_호출하는지_검증(){
-    val result = playlistsClient.requestPlaylists(
+  fun test_playlists_api_by_channelId_를_정상적으로_호출하는지_검증(){
+    val result = playlistsClient.requestPlaylistsByChannelId(
         part = "snippet, contentDetails",
         channelId = "UC_x5XG1OV2P6uZZ5FSM9Ttw",
         maxResults = 25,
@@ -27,5 +26,19 @@ class PlaylistsFeignClientTest {
 
     println(block)
   }
+
+  @Test
+  fun test_playlists_api_by_mine_을_정상적으로_호출하는지_검증(){
+    val result = playlistsClient.requestPlaylistsByMine(
+        part = "snippet, contentDetails",
+        mine = true,
+        maxResults = 25,
+    )
+
+    val block = result.block(Duration.ofMillis(3000))
+
+    println(block)
+  }
+
 
 }
