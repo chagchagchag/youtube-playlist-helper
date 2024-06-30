@@ -1,0 +1,19 @@
+##
+## 외국 개발자가 알려준 방식
+curl https://www.googleapis.com/youtube/v3/search?key=AIzaSyAeB7eC6dPca1FbfYnepnB9b3fj-ALyS8A&q=hello
+
+
+##
+## 플레이리스트 조회 (구글 플레이리스트)
+curl 'https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&channelId=UC_x5XG1OV2P6uZZ5FSM9Ttw&maxResults=25&key=AIzaSyAeB7eC6dPca1FbfYnepnB9b3fj-ALyS8A' \
+ --header 'Accept: application\json' \
+ --compressed
+
+##
+## 이건 내 채널의 재생목록 (chagchagchag.dev@gmail.com)
+curl 'https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&channelId=UCkfvMPThSqfHaII1nEtWwhA&maxResults=25&key=AIzaSyAeB7eC6dPca1FbfYnepnB9b3fj-ALyS8A' \
+ --header 'Accept: application\json' \
+ --compressed
+
+
+

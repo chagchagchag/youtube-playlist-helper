@@ -1,0 +1,10 @@
+curl -H "Authorization: Bearer ya29.a0AXooCgsP5Roq3U96LOKXE_T-x0J4onsZVejz-jBgjDEVH7aC__HUfcwCBVeTx2GjLNdHMAjFKLqR8WzUMzU0uqpauCNfjL3DakhWu77xLlG7MOvVdea8KIPL0PLwjIi-n0wMVukZ37iFjcjzPP9TDHDKnTVZNenllbRsaCgYKAW0SARMSFQHGX2Mi4gEJzPJkuzYQKq0zfkqMlA0171" 'https://www.googleapis.com/youtube/v3/playlistItems?part=id%2Csnippet&channelId=UCkfvMPThSqfHaII1nEtWwhA&key=AIzaSyAeB7eC6dPca1FbfYnepnB9b3fj-ALyS8A'
+
+
+
+
+curl \
+  'https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&maxResults=25&mine=true&key=AIzaSyAeB7eC6dPca1FbfYnepnB9b3fj-ALyS8A' \
+  --header 'Authorization: Bearer ya29.a0AXooCgtpmzTeZwPjDMpy119BjwjUJL7D6ebgSFsUfxUzqnTcwgIF9HXEu9VqTiNhFjkK6alQZeje_gfk3NG131R1IKPL--2qd1T2cZy5uQW6BgbMBIClxS6f0vUdEAdI0oiPPvF-30c3QoxTnQh1RGoD2tEOWsGQ-3PzaCgYKAY4SARESFQHGX2MiltqPLS1WUE49S25CZGEzlA0171' \
+  --header 'Accept: application/json' \
+  --compressed
