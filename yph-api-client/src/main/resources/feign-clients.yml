@@ -7,5 +7,5 @@ feign-clients:
     step3:
       url: https://oauth2.googleapis.com/
   youtube-data-api:
-    url: https://youtube.googleapis.com/
+    url: https://www.googleapis.com/
 
