@@ -1,0 +1,24 @@
+### Google Developers 채널내의 플레이리스트 조회
+# curl 'https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&channelId=UC_x5XG1OV2P6uZZ5FSM9Ttw&maxResults=25&key=AIzaSyAeB7eC6dPca1FbfYnepnB9b3fj-ALyS8A'
+# --header 'Accept: application\json'
+# --compressed
+GET https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&
+    channelId=UC_x5XG1OV2P6uZZ5FSM9Ttw&maxResults=25&key=AIzaSyAeB7eC6dPca1FbfYnepnB9b3fj-ALyS8A
+Accept: applicationjson
+
+
+### 특정 사용자 채널 내의 플레이리스트 조회
+### 사용자명 (chagchagchag.dev@gmail.com)
+# curl 'https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&channelId=UCkfvMPThSqfHaII1nEtWwhA&maxResults=25&key=AIzaSyAeB7eC6dPca1FbfYnepnB9b3fj-ALyS8A'
+# --header 'Accept: application\json'
+# --compressed
+GET https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&
+    channelId=UCkfvMPThSqfHaII1nEtWwhA&maxResults=25&key=AIzaSyAeB7eC6dPca1FbfYnepnB9b3fj-ALyS8A
+Accept: applicationjson
+
+###
+
+
+
+
+
