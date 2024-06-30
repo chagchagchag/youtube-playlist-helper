@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class PlaylistController (
+class PlaylistsController (
   val playlistApplicationService: PlaylistApplicationService
 ){
-  val logger: Logger = LoggerFactory.getLogger(PlaylistController::class.java)
+  val logger: Logger = LoggerFactory.getLogger(PlaylistsController::class.java)
 
   @GetMapping("/youtube/test")
   fun youtubeTest(): String{
