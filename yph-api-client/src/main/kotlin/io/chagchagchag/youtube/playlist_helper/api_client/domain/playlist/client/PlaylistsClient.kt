@@ -3,7 +3,7 @@ package io.chagchagchag.youtube.playlist_helper.api_client.domain.playlist.clien
 import feign.Headers
 import feign.Param
 import feign.RequestLine
-import io.chagchagchag.youtube.playlist_helper.api_client.domain.playlist.dto.PlaylistsResponse
+import io.chagchagchag.youtube.playlist_helper.api_client.domain.playlist.dto.response.PlaylistsResponse
 import io.chagchagchag.youtube.playlist_helper.api_client.domain.playlist.dto.request.PlaylistsDeleteRequest
 import io.chagchagchag.youtube.playlist_helper.api_client.domain.playlist.dto.request.PlaylistsInsertRequest
 import io.chagchagchag.youtube.playlist_helper.api_client.domain.playlist.dto.request.PlaylistsUpdateRequest

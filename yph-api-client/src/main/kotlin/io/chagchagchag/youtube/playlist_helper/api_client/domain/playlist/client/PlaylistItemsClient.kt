@@ -10,7 +10,6 @@ import io.chagchagchag.youtube.playlist_helper.api_client.domain.playlist.dto.re
 import io.chagchagchag.youtube.playlist_helper.api_client.global.youtube.model.PlaylistItem
 import reactor.core.publisher.Mono
 
-// TODO :: PlaylistItemListResponse 커스텀 정의 필요 (원본라이브러리 호출 에러 발생함)S
 interface PlaylistItemsClient {
 
   /** (list)
